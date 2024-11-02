@@ -17,6 +17,9 @@ This paper considers a multi-skilled project scheduling problem that is a newly 
 
 Please refer to our [paper](https://civilica.com/doc/669054/) for detailed values.
 
+## Contact 
+If there are any questions, please feel free to contact the author: Masoud Arjmand (m.arjmand@ut.ac.ir). 
+
 ## Meta-heuristic Algorithms
 
 The following algorithms are employed to solve the problem:

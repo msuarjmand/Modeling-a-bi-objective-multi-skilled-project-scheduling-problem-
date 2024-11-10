@@ -1,6 +1,6 @@
 function sol1=ParseSolution2(sol,model)
 
-    %% 
+    %% Input Parameters
     
     q=sol.q;
     D=sol.D;
@@ -13,7 +13,7 @@ function sol1=ParseSolution2(sol,model)
     worker=model.worker;
 
     
-    %% 
+    %% Parsing Solution
     
     q=RepairSchedule(q,model);
     T=sum(t);
@@ -72,8 +72,7 @@ function sol1=ParseSolution2(sol,model)
     
     W=W(:,1:Cmax);
     
-    %% 
-
+    %% Output Parameters
     
     sol1.q=q;
     sol1.ST=ST;

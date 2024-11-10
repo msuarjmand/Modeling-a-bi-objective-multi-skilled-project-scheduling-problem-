@@ -1,10 +1,14 @@
 function sol2=Mutate2(sol1)
 
+%% Input Parameters
 
     C=sol1.C;
     L=sol1.L;
     RS=sol1.RS;
     activity=sol1.activity;
+
+
+%% Three Mutation operations
 
     m=randi([1 3]);
     
@@ -51,10 +55,6 @@ function sol2=Mutate2(sol1)
          D{i}=w;
         
      end 
-    
-    
-    
-    
     
     sol2.q=q;
     sol2.D=D;

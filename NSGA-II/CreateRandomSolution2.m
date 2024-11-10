@@ -1,6 +1,7 @@
 function sol=CreateRandomSolution2(model)
 
-
+    %% Input Parameters
+    
     N=model.N;
     activity=model.activity;
     worker=model.worker;
@@ -21,53 +22,37 @@ function sol=CreateRandomSolution2(model)
     
     %%
     
-    
-   
     C=cell(1,skill);                  
     D=cell(1,N);                      
     L=cell(1,N);                      
-
     
-
-
-    
-     for o=1:skill
-         
-         C{o}=find(worker(:,o)==1);
-         
+     for o=1:skill         
+         C{o}=find(worker(:,o)==1);         
      end
-     
-    
-     for i=q
-        
+      
+     for i=q  
          L{i}=find(activity(i,:)~=0);             
-
-            w=[];    
-            
+            w=[];          
             a=1;
-
-            
+        
          for j=L{i}
              aw=C{j};    
-             
-             
-            for k=1:activity(i,j) 
-                
+                 
+            for k=1:activity(i,j)   
                 aw=aw(~ismember(aw,w));
                 x=cumsum((1/(numel(aw)-(k-1))).*ones(1,(numel(aw)-(k-1))));  
                 f=find(p2(a,i)<=x,1,'first');
                 w=[w aw(f)];    %#ok
                 aw(f)=[]; 
-                a=a+1;
-                
-            end 
-           
+                a=a+1;          
+            end       
          end
          
-         D{i}=w;
-        
+         D{i}=w;        
      end
-    
+     
+%% Output Parameters   
+
 sol.q=q;
 sol.D=D;
 sol.C=C;

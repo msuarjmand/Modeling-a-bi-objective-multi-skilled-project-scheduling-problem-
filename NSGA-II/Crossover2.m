@@ -1,6 +1,6 @@
 function [y1 y2]=Crossover2(x1,x2)
 
-
+%% Input Parameters
 
         RS1=x1.RS;
         L=x1.L;
@@ -10,7 +10,7 @@ function [y1 y2]=Crossover2(x1,x2)
         RS2=x2.RS;
 
 
-%%
+%% Three Crossover operations
 
       METHOD=randi([1 3]);
 
@@ -131,7 +131,7 @@ function [y1 y2]=Crossover2(x1,x2)
 
 
 
-%%
+%% Output Parameters
                 
     y1.q=q1;
     y1.D=D1;

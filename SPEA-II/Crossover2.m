@@ -10,7 +10,7 @@ function [y1 y2]=Crossover2(x1,x2)
         RS2=x2.RS;
 
 
-%%
+%% Crossover operations
 
       METHOD=randi([1 3]);
 
@@ -70,7 +70,7 @@ function [y1 y2]=Crossover2(x1,x2)
       end
     
 
-%%
+%% Assigning activities to the available workers
 
     p11=RSnew1(1,:);                         
     p12=RSnew1(2:end,:);                     
@@ -131,7 +131,7 @@ function [y1 y2]=Crossover2(x1,x2)
 
 
 
-%%
+    %% Output parameters
                 
     y1.q=q1;
     y1.D=D1;

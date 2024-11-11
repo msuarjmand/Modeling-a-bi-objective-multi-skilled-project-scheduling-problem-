@@ -1,6 +1,7 @@
 function sol=CreateRandomSolution2(model)
 
-
+    %% Input parameters
+    
     N=model.N;
     activity=model.activity;
     worker=model.worker;
@@ -21,13 +22,9 @@ function sol=CreateRandomSolution2(model)
     
     %%
     
-    
-   
     C=cell(1,skill);                  
     D=cell(1,N);                      
     L=cell(1,N);                      
-    
-
 
     
      for o=1:skill
@@ -65,8 +62,9 @@ function sol=CreateRandomSolution2(model)
          D{i}=w;
         
      end
-    %%
-    
+
+     
+    %% Output parameters
     
     sol.q=q;
     sol.D=D;

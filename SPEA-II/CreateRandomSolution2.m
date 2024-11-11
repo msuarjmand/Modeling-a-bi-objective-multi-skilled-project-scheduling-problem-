@@ -9,7 +9,7 @@ function sol=CreateRandomSolution2(model)
 
     
     
-    %% 
+    %% Activity Sequence
     
     A=(sum(activity(:,:),2))';          
     RS=rand(max(A)+1,N);                
@@ -20,7 +20,7 @@ function sol=CreateRandomSolution2(model)
     [~,q]=sort(p1);                     
 
     
-    %%
+    %% Preallocate variables for skills
     
     C=cell(1,skill);                  
     D=cell(1,N);                      

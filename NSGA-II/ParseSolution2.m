@@ -13,7 +13,7 @@ function sol1=ParseSolution2(sol,model)
     worker=model.worker;
 
     
-    %% Parsing Solution
+    %% Parsing the solution
     
     q=RepairSchedule(q,model);
     T=sum(t);

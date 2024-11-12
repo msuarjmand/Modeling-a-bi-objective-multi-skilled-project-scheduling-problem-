@@ -1,6 +1,6 @@
 function sol1=ParseSolution2(sol,model)
 
-    %% 
+    %% Input Parameters
     
     q=sol.q;
     D=sol.D;

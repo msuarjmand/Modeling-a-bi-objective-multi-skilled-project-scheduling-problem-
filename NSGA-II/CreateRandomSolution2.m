@@ -20,7 +20,7 @@ function sol=CreateRandomSolution2(model)
     [~,q]=sort(p1);                     
 
     
-    %% Preallocate variables for skills
+    %% skills Preallocated variables
     
     C=cell(1,skill);                  
     D=cell(1,N);                      
